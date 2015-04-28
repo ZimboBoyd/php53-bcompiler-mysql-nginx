@@ -1,0 +1,1 @@
+docker run -p 80:80 -p 443:443 --dns=8.8.8.8 --dns=8.8.4.4 -m 512m -v /home:/var/www/myHost -i -d --name webenv -t php53
