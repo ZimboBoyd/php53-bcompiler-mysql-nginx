@@ -1,1 +1,1 @@
-docker run -p 80:80 -p 443:443 --dns=8.8.8.8 --dns=8.8.4.4 -m 512m -v /home:/var/www/myHost -i -d --name webenv -t php53
+docker run -p 81:80 --dns=8.8.8.8 --dns=8.8.4.4 -m 512m -v /data/www:/var/www -v /data/mysql:/var/lib/mysql -i -t --name web -t zimboboyd/php53-bcompiler-mysql-nginx
